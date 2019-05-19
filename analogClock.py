@@ -27,8 +27,8 @@ class main(Tkinter.Tk):
         return
 
     def createBackground(self):
-        self.image = Tkinter.PhotoImage(file = 'C:\Users\Kevin\Downloads\clock6.gif')#Tkinter.PhotoImage does not support JPG
-        self.canvas.createImage(150,150, image=self.image)
+        self.image = Tkinter.PhotoImage(file = 'clock6.gif')#Tkinter.PhotoImage does not support JPG
+        self.canvas.create_image(150,150, image=self.image)
         return
     
     def createsCanvasForShapes(self):
@@ -39,7 +39,7 @@ class main(Tkinter.Tk):
     def createSticks(self):
         self.sticks=[]
         for i in range(3):
-            store=self.canvas.createLine(self.x, self.y, self.x+self.length, self.y+self.length, width =2, fill = 'green')
+            store=self.canvas.create_line(self.x, self.y, self.x+self.length, self.y+self.length, width =2, fill = 'green')
             self.sticks.append(store)
         return
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
 while True:
     root.update()
-    root.updateIdleTasks()
+    root.update_idletasks()
     root.updateClass()
 
 
