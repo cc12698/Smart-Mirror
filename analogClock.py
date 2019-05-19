@@ -15,9 +15,9 @@ import time
 class main(Tkinter.Tk):
     def __init__(self):
         Tkinter.Tk.__init__(self)
-        self.x=150
-        self.y=150
-        self.length=50
+        self.x=250
+        self.y=250
+        self.length=100
         self.createFuncTrigger()
 
     def createFuncTrigger(self):
@@ -28,7 +28,7 @@ class main(Tkinter.Tk):
 
     def createBackground(self):
         self.image = Tkinter.PhotoImage(file = 'clock6.gif')#Tkinter.PhotoImage does not support JPG
-        self.canvas.create_image(150,150, image=self.image)
+        self.canvas.create_image(250,250, image=self.image)
         return
     
     def createsCanvasForShapes(self):
