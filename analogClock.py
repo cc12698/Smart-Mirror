@@ -1,9 +1,3 @@
-#
-#
-#
-#
-##########
-
 try:
     import Tkinter
 except:
