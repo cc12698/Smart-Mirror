@@ -51,12 +51,11 @@ class main(Tkinter.Tk):
             self.canvas.coords(self.sticks[n], tuple(cr))
         return
 
-if __name__ == '__main__':
-    root=main()
+#if __name__ == '__main__':
+ #   root=main()
 
-while True:
-    root.update()
-    root.update_idletasks()
-    root.updateClass()
-
+#while True:
+ #   root.update()
+  #  root.update_idletasks()
+   # root.updateClass()
 
