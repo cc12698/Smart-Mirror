@@ -23,19 +23,19 @@ class main(Tkinter.Tk):
     def createBackground(self):
         self.image = Tkinter.PhotoImage(file = 'clock6.gif')#Tkinter.PhotoImage does not support JPG
         self.canvas.create_image(250,250, image=self.image)
-        return
+        return # creates the background clock img
     
     def createsCanvasForShapes(self):
         self.canvas=Tkinter.Canvas(self, bg='black')
         self.canvas.pack(expand='yes',fill='both')
-        return
+        return # creates tkinter uI
     
     def createSticks(self):
         self.sticks=[]
         for i in range(3):
             store=self.canvas.create_line(self.x, self.y, self.x+self.length, self.y+self.length, width =2, fill = 'green')
             self.sticks.append(store)
-        return
+        return # create sticks
 
     def updateClass(self):
         now=time.localtime()
