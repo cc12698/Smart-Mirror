@@ -7,11 +7,15 @@ import math
 import time
 import weatherPortion
 import analogClock
+#import clothingRecommendation
+
 
 
 if __name__ == '__main__':
     root = analogClock.main()
-    clockRoot= weatherPortion.main()
+    weatherRoot= weatherPortion.main()
+    #clothRoot = clothingRecommendation.main()
+    
 
 while True:
     root.update()
@@ -19,5 +23,7 @@ while True:
     root.updateClass()
 
         
+
+
 
 
